@@ -2,7 +2,7 @@
   'use strict';
 
   var header = document.querySelector('header');
-  // var offlineDiv = document.getElementsByClassName('mdl-layout-offline')[0];  
+  var offlineDiv = document.getElementsByClassName('mdl-layout-offline')[0];  
   //After DOM Loaded
   document.addEventListener('DOMContentLoaded', function(event) {
 
@@ -19,10 +19,10 @@
   function updateNetworkStatus() {
     if (navigator.onLine) {      
       header.style.background = 'rgb(244,67,54)'; 
-      // offlineDiv.classList.add('hidden');
+      offlineDiv.classList.add('hidden');
     }
     else {      
-      // offlineDiv.classList.remove('hidden');
+      offlineDiv.classList.remove('hidden');
       header.style.background = '#9E9E9E';
     }
   }

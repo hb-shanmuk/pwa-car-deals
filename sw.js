@@ -23,7 +23,9 @@ var carDealsCacheFiles = [
   'resources/material-design-lite/material.min.js.map',
   'resources/material-design-lite/material.red-indigo.min.css',
   'resources/systemjs/system.js',
-  'resources/systemjs/system-polyfills.js'
+  'resources/systemjs/system-polyfills.js',
+  'css/style.css',
+  'icons/refresh.svg'
 ];
 
 var latestPath = '/pluralsight/courses/progressive-web-apps/service/latest-deals.php';

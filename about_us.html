@@ -1,1 +1,118 @@
-<h1>ABOUT US</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="The best car deals on the web!">
+    <link rel="manifest" href="manifest.json">
+    <title>Car Deals</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="resources/material-design-lite/material.red-indigo.min.css" />
+    <script src="resources/material-design-lite/material.min.js"></script>
+    
+    <!-- App Name -->
+    <meta name="apple-mobile-web-app-title" content="Car Deals">
+    <meta name="application-name" content="Car Deals">
+
+    <!-- App Capable -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png">
+    <!-- For iPhone with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png">
+    <!-- For iPad with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
+    <!-- For iPhone 6 Plus with @3× display: -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
+
+    <!-- Desktop Browsers -->
+    <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="icons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="icons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
+
+    <!-- Android: Chrome M31 and up, ignored if manifest is present-->
+    <!-- For Chrome for Android: -->
+    <link rel="icon" sizes="192x192" href="icons/android-chrome-192x192.png">
+
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#f44336">
+    
+    <!-- Windows 8/10 and IE 11 -->
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png">
+    <meta name="theme-color" content="#f44336">
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="header__icon">
+            <svg class="menu__icon no--select" width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+              <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+            </svg>
+          </span>
+          <span class="mdl-layout-title">Car Deals</span>
+          <div class="mdl-layout-spacer">                      
+          </div>
+          <div class="mdl-layout-offline hidden">
+            This site is currently in offline!
+          </div>
+        </div>
+      </header>
+
+      <div class="menu">
+        <div class="menu__header">          
+        </div>
+        <ul class="menu__list">
+          <li><a href="/">Home</a></li>
+          <li style="background: rgb(244,67,54);"><a style="color: #fff; font-weight: bold;" href="#!">About Us</a></li>
+        </ul>
+      </div>
+      <main class="mdl-layout__content about-us">
+        <div id="connection-status" class="center"></div>
+        <div class="mdl-grid">
+          <div class='abt-div-1'>
+            <h3>Why build a Progressive Web App?</h3>
+            <span>Building a high-quality Progressive Web App has incredible benefits, making it easy to delight your users, grow engagement and increase conversions.</span>            
+          </div>
+          <div class='abt-div-1'>
+            <h4>Fast</h4>
+            <p>53% of users will abandon a site if it takes longer than 3 seconds to load! And once loaded, users expect them to be fast—no janky scrolling or slow-to-respond interfaces.</p>
+          </div>
+          <div class='abt-div-1'>
+            <h4>Reliable</h4>
+            <p>When launched from the user’s home screen, service workers enable a Progressive Web App to load instantly, regardless of the network state.</p>
+            <p>A service worker, written in JavaScript, is like a client-side proxy and puts you in control of the cache and how to respond to resource requests. By pre-caching key resources you can eliminate the dependence on the network, ensuring an instant and reliable experience for your users.</p>
+          </div>
+          <div class='abt-div-1'>
+            <h4> Engaging</h4>
+            <p>
+              Progressive Web Apps are installable and live on the user's home screen, without the need for an app store. They offer an immersive full screen experience with help from a web app manifest file and can even re-engage users with web push notifications.
+              The Web App Manifest allows you to control how your app appears and how it's launched. You can specify home screen icons, the page to load when the app is launched, screen orientation, and even whether or not to show the browser chrome.
+            </p>
+          </div>
+          <div class='abt-div-1'>
+            <h4>Lighthouse</h4>
+            <p>
+              Lighthouse, an open-source, automated tool for improving the quality of your Progressive Web Apps, eliminates much of the manual testing that was previously required. You can even use Lighthouse in continuous integration systems to catch regressions.            
+            </p>
+          </div>
+
+        </div>        
+      </main>
+    </div>
+
+    <script src="./js/offline.js"></script>
+    <script src="./js/menu.js"></script>
+
+  
+  </body>
+</html>

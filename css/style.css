@@ -43,6 +43,7 @@ li {
   list-style: none;
   padding: 0;
   margin: 0;
+  height: 50px;
 }
 
 .no--select {
@@ -191,8 +192,8 @@ header {
 }
 
 .menu__header {
-  height: 150px;
-  background: #1E88E5;
+  height: 65px;
+  background: rgb(244,67,54);
   color: #fff;
   border-bottom: 1px solid #ddd;
 }
@@ -602,13 +603,13 @@ b i a {
 }
   
 .loader #spinner {
-    box-sizing: border-box;
-    stroke: #673AB7;
-    stroke-width: 3px;
-    -webkit-transform-origin: 50%;
-            transform-origin: 50%;
-    -webkit-animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
-            animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite; 
+  box-sizing: border-box;
+  stroke: #673AB7;
+  stroke-width: 3px;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
+          animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite; 
 }
 
 .card__spinner.show {
@@ -631,17 +632,36 @@ b i a {
 }
 
 .headerButton {
-    width: 24px;
-    margin-right: 16px;
-    overflow: hidden;
-    /** opacity: 0.54; **/
-    -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
-    transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
-    border: none;
-    outline: none;
-    cursor: pointer; 
+  width: 24px;
+  margin-right: 16px;
+  overflow: hidden;
+  /** opacity: 0.54; **/
+  -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  border: none;
+  outline: none;
+  cursor: pointer; 
 }
   
 #butRefresh {
-    background: url(/images/ic_refresh_white_24px.svg) center center no-repeat; 
+  background: url(/icons/refresh.svg) center center no-repeat; 
+}
+
+.center{text-align:center;padding:26px;}
+.mdl-card{cursor:pointer;color:#ffffff !important;height:250px;background-size: cover;}
+.mdl-card__title-text{color:#ffffff !important;background-color:rgba(0,0,0,0.5);padding:15px;
+    position:absolute;left:0;bottom:0;width:100%;box-sizing: border-box;}
+.mdl-layout-spacer{width: 50% !important;}
+.mdl-layout-offline{color: #000; font-weight: bold; margin-right: 10px;}
+.hidden{display: none;}
+.mdl-layout__header-row{padding: 0 40px 0 20px !important;}
+
+.about-us .mdl-grid{width: 70%;
+  box-shadow: 7px 7px 5px #dedddd;
+  border-left: 10px solid rgb(244,67,54);
+}
+.abt-div-1 span{font-weight: bold;}
+ul, ol {
+  font-size: 14px;
+  line-height: 10px !important;
 }
